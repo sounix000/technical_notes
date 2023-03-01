@@ -1,4 +1,5 @@
 = Technical notes
 Notes on technology and software, primarily for my own reference.
 
-* xref:[Coming soon]
+== Python
+* xref:1-mar-2023-none-in-python.adoc[None in Python]
