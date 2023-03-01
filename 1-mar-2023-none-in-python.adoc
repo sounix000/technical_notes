@@ -1,0 +1,45 @@
+= None in Python
+When type classes come to your rescue
+
+Consider the following Python code snippet:
+
+.Example: `script.py`
+[source,python]
+----
+my_var = None
+print("Value of the variable my_var is", my_var)
+
+your_var = "None"
+print("Value of the variable your_var is", your_var)
+----
+
+When you run the script, the following output is displayed:
+
+[source,terminal]
+----
+Value of the variable my_var is None
+Value of the variable your_var is None
+----
+
+Although `my_var` and `your_var` has different values, there is no way to distinguish them based on the output of the script.
+
+When working with variables that may contain a `None` value, it is better to print their type classes instead of their values. For example:
+
+.Example: `script.py` printing type classes
+[source,python]
+----
+my_var = None
+print("Type class of the variable my_var is", type(my_var))
+
+your_var = "None"
+print("Type class of the variable your_var is", type(your_var))
+----
+
+.Output with type classes
+[source,terminal]
+----
+Type class of the variable my_var is <class 'NoneType'>
+Type class of the variable your_var is <class 'str'>
+----
+
+Such an approach is a safer, and hence better, approach to working with variables in Python that may have the value `None`. In any case, using `print` statements for debugging is a terrible idea and a bad practice.
