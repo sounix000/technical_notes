@@ -1,5 +1,7 @@
 = Technical notes
 Notes on technology and software, primarily for my own reference.
+:toc:
+:nofooter:
 
 == Python
-* xref:1-mar-2023-none-in-python.adoc[None in Python]
+* xref:python/1-mar-2023-none-in-python.adoc[None in Python]
